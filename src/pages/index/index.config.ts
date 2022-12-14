@@ -1,3 +1,5 @@
+import { APP_NAME } from "../../app.config";
+
 export default definePageConfig({
-  navigationBarTitleText: '首页'
-})
+  navigationBarTitleText: APP_NAME,
+});
