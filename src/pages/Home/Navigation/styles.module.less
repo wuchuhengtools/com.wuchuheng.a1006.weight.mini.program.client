@@ -1,0 +1,19 @@
+@import "../../../app.less";
+@content-height: 90vh;
+
+/// 展示
+.content{
+  height: @content-height;
+  overflow-y: scroll;
+  background: var(--theme-base-200);
+}
+/// 底部
+.bottom{
+  height: 100vh - @content-height;
+  display: grid;
+  background: var(--theme-base-100);
+  &_active {
+    color: var(--theme-primary-color);
+  }
+}
+

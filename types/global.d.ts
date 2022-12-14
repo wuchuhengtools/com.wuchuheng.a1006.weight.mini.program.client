@@ -25,3 +25,6 @@ declare namespace NodeJS {
       | "jd";
   }
 }
+
+/// 图标名
+declare type IconsName = "diary" | "report" | "me";
