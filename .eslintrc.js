@@ -1,3 +1,3 @@
 module.exports = {
-  "extends": ["taro/preact"]
-}
+  extends: ["taro/preact", "prettier"],
+};

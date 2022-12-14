@@ -31,11 +31,13 @@ specifiers:
   '@typescript-eslint/parser': ^5.20.0
   babel-preset-taro: 3.5.10
   eslint: ^8.12.0
+  eslint-config-prettier: ^8.5.0
   eslint-config-taro: 3.5.10
   eslint-plugin-import: ^2.12.0
   eslint-plugin-react: ^7.8.2
   eslint-plugin-react-hooks: ^4.2.0
   preact: ^10.5.15
+  prettier: 2.8.1
   react-redux: ^7.2.0
   redux: ^4.0.0
   redux-logger: ^3.0.6
@@ -79,10 +81,12 @@ devDependencies:
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.46.1_ha6vam6werchizxrnqvarmz2zu
   babel-preset-taro: registry.npmmirror.com/babel-preset-taro/3.5.10_3vcewlmxiavib5jyboow4ijgey
   eslint: registry.npmmirror.com/eslint/8.29.0
+  eslint-config-prettier: registry.npmmirror.com/eslint-config-prettier/8.5.0_eslint@8.29.0
   eslint-config-taro: registry.npmmirror.com/eslint-config-taro/3.5.10_obc23qs65rzt5guiiciw7rik2m
   eslint-plugin-import: registry.npmmirror.com/eslint-plugin-import/2.26.0_z7hwuz3w5sq2sbhy7d4iqrnsvq
   eslint-plugin-react: registry.npmmirror.com/eslint-plugin-react/7.31.11_eslint@8.29.0
   eslint-plugin-react-hooks: registry.npmmirror.com/eslint-plugin-react-hooks/4.6.0_eslint@8.29.0
+  prettier: registry.npmmirror.com/prettier/2.8.1
   stylelint: registry.npmmirror.com/stylelint/9.3.0
   typescript: registry.npmmirror.com/typescript/4.9.4
   webpack: registry.npmmirror.com/webpack/5.69.0
@@ -7161,6 +7165,18 @@ packages:
       optionator: registry.npmmirror.com/optionator/0.8.3
     optionalDependencies:
       source-map: registry.npmmirror.com/source-map/0.6.1
+    dev: true
+
+  registry.npmmirror.com/eslint-config-prettier/8.5.0_eslint@8.29.0:
+    resolution: {integrity: sha512-obmWKLUNCnhtQRKc+tmnYuQl0pFU1ibYJQ5BGhTVB08bHe9wC8qUeG7c08dj9XX+AuPj1YSGSQIHl1pnDHZR0Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-config-prettier/-/eslint-config-prettier-8.5.0.tgz}
+    id: registry.npmmirror.com/eslint-config-prettier/8.5.0
+    name: eslint-config-prettier
+    version: 8.5.0
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
+    dependencies:
+      eslint: registry.npmmirror.com/eslint/8.29.0
     dev: true
 
   registry.npmmirror.com/eslint-config-taro/3.5.10_obc23qs65rzt5guiiciw7rik2m:
