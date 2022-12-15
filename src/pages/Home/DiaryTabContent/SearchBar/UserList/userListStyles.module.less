@@ -1,0 +1,10 @@
+@import "../common.module";
+
+@columPadding: 1rem;
+.main {
+  margin-left: @leftMargin;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: @columPadding;
+  padding-bottom: @columPadding;
+}

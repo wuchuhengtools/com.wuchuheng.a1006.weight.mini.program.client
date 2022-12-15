@@ -1,0 +1,27 @@
+@import "../../../../../app";
+@import "../common.module";
+@iconAndPlaceholderColor: #C3C3C3;
+@iconMargin: .5rem;
+
+.main {
+  display: flex;
+  align-items: center;
+  height: 3.2rem;
+  &__inputWrapper {
+    background: white;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    width: 70%;
+    margin-left: @leftMargin;
+    border-radius: 2.5rem;
+    &__icon {
+      margin-left: @iconMargin;
+      margin-right: @iconMargin;
+      color: @iconAndPlaceholderColor;
+    }
+    &__placeholder {
+      color: @iconAndPlaceholderColor;
+    }
+  }
+}

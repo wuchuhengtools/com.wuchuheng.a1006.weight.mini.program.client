@@ -38,6 +38,7 @@ const Navigation: React.FC<NavigationProps> = ({
       >
         {tabs.map((it, index) => (
           <Tab
+            key={index}
             text={it.text}
             icon={it.icon}
             className={index == activeIndex ? styles.bottom_active : ""}

@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import configStore from "./store";
 
 import "./app.less";
+import "./assets/iconfont/iconfont.css"; //字体图标
 
 const store = configStore();
 
