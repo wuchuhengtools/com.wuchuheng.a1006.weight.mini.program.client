@@ -8,11 +8,13 @@
 
 import React from "preact/compat";
 import SearchBar from "./SearchBar/SearchBar";
+import WeightManager from "./WeightManager/WeightManager";
 
 const DiaryTabContent: React.FC = () => {
   return (
     <>
       <SearchBar />
+      <WeightManager />
     </>
   );
 };

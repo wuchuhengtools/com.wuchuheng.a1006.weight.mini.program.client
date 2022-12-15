@@ -1,0 +1,24 @@
+.main {
+  background: var(--theme-base-100);
+  margin: 0 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: .5rem;
+  &__rightTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.item {
+  text-align: center;
+  color: var(--theme-base-500);
+  font-size: .8rem;
+  &__value {
+    color: var(--theme-primary-color);
+    font-size: 1.3rem;
+  }
+}
