@@ -1,0 +1,22 @@
+.main {
+  &__items {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    &__item {
+      display: flex;
+      align-items: center;
+      color: var(--theme-base-600);
+      &__value{
+        padding-left: .5rem;
+        font-size: .9rem;
+      }
+    }
+  }
+}
+.point {
+  @size: .4rem;
+  width: @size;
+  height: @size;
+  border-radius: 50%;
+}

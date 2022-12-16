@@ -33,4 +33,5 @@ declare type IconsName =
   | "me"
   | "search"
   | "plus"
-  | "right";
+  | "right"
+  | "help";
