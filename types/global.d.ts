@@ -34,4 +34,9 @@ declare type IconsName =
   | "search"
   | "plus"
   | "right"
-  | "help";
+  | "help"
+  | "circlePlus"
+  | "lunch"
+  | "dinner"
+  | "breakfast"
+  | "extraMeal";

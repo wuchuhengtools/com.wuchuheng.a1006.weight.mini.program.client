@@ -10,6 +10,7 @@ import React from "preact/compat";
 import SearchBar from "./SearchBar/SearchBar";
 import WeightManager from "./WeightManager/WeightManager";
 import WeightLossGoal from "./WeightLossGoal/WeightLossGoal";
+import DailyMeals from "./DailyMeals/DailyMeals";
 
 const DiaryTabContent: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const DiaryTabContent: React.FC = () => {
       <SearchBar />
       <WeightManager />
       <WeightLossGoal />
+      <DailyMeals />
     </>
   );
 };
