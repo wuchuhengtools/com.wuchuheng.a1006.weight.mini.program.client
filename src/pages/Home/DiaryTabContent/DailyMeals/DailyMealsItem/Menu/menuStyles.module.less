@@ -1,9 +1,33 @@
+@keyframes slideIn {
+  from {
+    margin-top: -10%;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100%;
+    margin-top: 0;
+  }
+}
+@keyframes slideOut {
+  from {
+    margin-top: 0;
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    margin-top: -40%;
+    display: none;
+  }
+}
+
 .main {
   &__visit {
-    display: block;
+    animation-name: slideIn;
   }
   &__hide {
-    display: none;
+    animation-name: slideOut;
   }
   &__items {
     display: flex;

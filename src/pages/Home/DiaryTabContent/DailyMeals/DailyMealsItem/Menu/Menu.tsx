@@ -6,7 +6,7 @@
  * @Time        2022/12/17 15:39
  */
 
-import React, { useState } from "preact/compat";
+import React, { useEffect, useState } from "preact/compat";
 import { ITouchEvent } from "@tarojs/components/types/common";
 import { Image, ScrollView, View } from "@tarojs/components";
 import styles from "./menuStyles.module.less";
@@ -64,9 +64,29 @@ const Menu: React.FC<MenuProps> = (props) => {
     newItems[index].isActive = !newItems[index].isActive;
     setItems(newItems);
   };
+  const [mainStyle, setMainStyle] = useState<Record<string, string>>({
+    display: props.isVisit ? "block" : "none",
+  });
+  const duration = 1000;
+  useEffect(() => {
+    let timeOut: ReturnType<typeof setTimeout> | undefined;
+    if (!props.isVisit) {
+      timeOut = setTimeout(() => {
+        setMainStyle({
+          display: "none",
+        });
+      }, duration - 200);
+    } else {
+      setMainStyle({
+        display: "block",
+      });
+    }
+    return () => clearTimeout(timeOut);
+  }, [props.isVisit]);
 
   return (
     <View
+      style={{ ...mainStyle, animationDuration: `${duration / 1000}s` }}
       className={[
         styles.main,
         props.isVisit ? styles.main__visit : styles.main__hide,
