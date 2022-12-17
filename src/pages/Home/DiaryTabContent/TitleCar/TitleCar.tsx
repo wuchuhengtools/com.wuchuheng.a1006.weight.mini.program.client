@@ -7,9 +7,9 @@
  */
 
 import React from "preact/compat";
+import { ReactNode } from "react";
 import { View } from "@tarojs/components";
 import styles from "./titleCarStyles.module.less";
-import { ReactNode } from "react";
 
 type TitleCarProps = {
   title: string;
