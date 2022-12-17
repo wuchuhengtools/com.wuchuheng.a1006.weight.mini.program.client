@@ -39,4 +39,5 @@ declare type IconsName =
   | "lunch"
   | "dinner"
   | "breakfast"
-  | "extraMeal";
+  | "extraMeal"
+  | "refresh";

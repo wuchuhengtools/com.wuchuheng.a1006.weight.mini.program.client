@@ -12,6 +12,7 @@ import WeightManager from "./WeightManager/WeightManager";
 import WeightLossGoal from "./WeightLossGoal/WeightLossGoal";
 import DailyMeals from "./DailyMeals/DailyMeals";
 import Goods from "./Goods/Goods";
+import Device from "./Device/Device";
 
 const DiaryTabContent: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const DiaryTabContent: React.FC = () => {
       <WeightLossGoal />
       <DailyMeals />
       <Goods />
+      <Device />
     </>
   );
 };

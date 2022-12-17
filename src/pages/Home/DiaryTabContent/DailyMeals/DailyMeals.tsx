@@ -11,6 +11,7 @@ import { View } from "@tarojs/components";
 import styles from "./dailyMealsStyles.module.less";
 import TitleCar from "../TitleCar/TitleCar";
 import DailyMealsItem from "./DailyMealsItem/DailyMealsItem";
+import DividingLine from "../../../../components/DividingLine/DividingLine";
 
 const DailyMeals: React.FC = () => {
   return (
@@ -23,21 +24,21 @@ const DailyMeals: React.FC = () => {
             title="早餐"
             subtitle="建议200千卡"
           />
-          <View className={styles.main__container__line} />
+          <DividingLine />
           <DailyMealsItem
             iconWrapperClassName={styles.main__container__lunchIcon}
             iconName="lunch"
             title="午餐"
             subtitle="建议200千卡"
           />
-          <View className={styles.main__container__line} />
+          <DividingLine />
           <DailyMealsItem
             iconWrapperClassName={styles.main__container__dinnerIcon}
             iconName="dinner"
             title="晚餐"
             subtitle="建议200千卡"
           />
-          <View className={styles.main__container__line} />
+          <DividingLine />
           <DailyMealsItem
             iconWrapperClassName={styles.main__container__extraMealIcon}
             iconName="extraMeal"
