@@ -54,7 +54,9 @@ const DailyMealsItem: React.FC<DailyMealsItemProps> = (props) => {
           className={styles.main__icon}
         />
       </View>
-      <Menu isVisit={isVisitMenu} />
+      <View className={styles.menu}>
+        <Menu isVisit={isVisitMenu} />
+      </View>
     </>
   );
 };
