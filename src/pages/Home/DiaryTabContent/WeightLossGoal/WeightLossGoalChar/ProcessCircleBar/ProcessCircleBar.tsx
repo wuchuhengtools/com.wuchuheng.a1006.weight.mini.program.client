@@ -6,7 +6,7 @@
  * @Time        2022/12/15 23:48
  */
 
-import { Canvas, View } from "@tarojs/components";
+import { Canvas, CoverView, View } from "@tarojs/components";
 import uCharts from "@qiun/ucharts";
 import React, { useEffect } from "preact/compat";
 import Taro from "@tarojs/taro";
@@ -108,13 +108,15 @@ const ProcessCircleBar: React.FC<ProcessCircleBarProps> = (props) => {
   });
 
   return (
-    <View>
-      <Canvas
-        canvas-id={key}
-        id={key}
-        style={{ width: `${width}rpx`, height: `${height}rpx` }}
-        onTouchEnd={tap}
-      />
+    <View style={{ height: `${height}rpx`, width: `${width}rpx` }}>
+      <CoverView>
+        <Canvas
+          canvas-id={key}
+          id={key}
+          style={{ width: `${width}rpx`, height: `${height}rpx` }}
+          onTouchEnd={tap}
+        />
+      </CoverView>
     </View>
   );
 };

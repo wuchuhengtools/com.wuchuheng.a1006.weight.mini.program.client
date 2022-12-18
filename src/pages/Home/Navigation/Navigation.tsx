@@ -5,7 +5,7 @@
  * @Author      wuchuheng<root@wuchuheng.com>
  * @Time        2022/12/14 16:42
  */
-import { View } from "@tarojs/components";
+import { ScrollView, View } from "@tarojs/components";
 import { ReactNode } from "react";
 import React from "preact/compat";
 import styles from "./styles.module.less";
@@ -31,7 +31,9 @@ const Navigation: React.FC<NavigationProps> = ({
 }) => {
   return (
     <>
-      <View className={styles.content}>{tabs[activeIndex].content}</View>
+      <ScrollView className={styles.main} scrollY>
+        <View className={styles.content}>{tabs[activeIndex].content}</View>
+      </ScrollView>
       <View
         className={styles.bottom}
         style={{ gridTemplateColumns: `repeat(${tabs.length}, 1fr)` }}

@@ -1,10 +1,12 @@
 @import "../../../app.less";
 @content-height: 91.5vh;
 
+.main {
+  height: @content-height;
+}
 /// 展示
 .content{
-  height: @content-height;
-  overflow-y: scroll;
+  min-height:  @content-height;
   background: var(--theme-base-200);
 }
 /// 底部
